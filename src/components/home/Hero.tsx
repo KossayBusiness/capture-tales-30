@@ -2,26 +2,26 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
 const slides = [
   {
-    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=2000&q=80',
-    title: 'Professional Photography & Videography',
-    subtitle: 'Capture moments that last a lifetime',
+    image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=2000&q=80',
+    title: 'Capturez vos moments en famille',
+    subtitle: 'Des souvenirs impérissables de vos événements les plus précieux',
     link: '/wedding'
   },
   {
-    image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=2000&q=80',
-    title: 'Premium Product Coverage',
-    subtitle: 'Showcase your products in the best light',
-    link: '/product'
+    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=80',
+    title: 'Photographie de Mariage d\'Exception',
+    subtitle: 'Des images qui racontent votre histoire d\'amour',
+    link: '/wedding'
   },
   {
-    image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=2000&q=80',
-    title: 'Media Coverage Solutions',
-    subtitle: 'Professional coverage for your events',
+    image: 'https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=2000&q=80',
+    title: 'Événements Familiaux Mémorables',
+    subtitle: 'Anniversaires, baptêmes, réunions de famille immortalisés',
     link: '/media'
   }
 ];
@@ -82,21 +82,22 @@ const Hero = () => {
               </p>
               <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <Button 
-                  size="xl" 
-                  asChild
+                  size="lg" 
+                  className="text-base"
                 >
-                  <Link to={slides[current].link}>
-                    Explore Services
+                  <Link to={slides[current].link} className="flex items-center">
+                    Découvrir nos services
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
                 <Button 
                   variant="outline" 
-                  size="xl" 
-                  asChild
-                  className="border-white text-white hover:bg-white/10"
+                  size="lg" 
+                  className="border-white text-white hover:bg-white/10 text-base"
                 >
-                  <a href="#contact">Contact Us</a>
+                  <a href="#contact" className="flex items-center">
+                    Nous contacter
+                  </a>
                 </Button>
               </div>
             </motion.div>

@@ -23,7 +23,7 @@ const ServiceCard = ({
   return (
     <div 
       className={cn(
-        'group relative overflow-hidden rounded-lg bg-white shadow-md hover-lift transition-all',
+        'group relative overflow-hidden rounded-lg bg-white shadow-lg hover-lift transition-all',
         className
       )}
     >
@@ -36,13 +36,13 @@ const ServiceCard = ({
         />
       </div>
       <div className="p-6">
-        <h3 className="text-2xl font-medium">{title}</h3>
+        <h3 className="text-2xl font-medium text-gray-900">{title}</h3>
         <p className="mt-3 text-muted-foreground line-clamp-3">{description}</p>
         <Link 
           to={linkTo}
-          className="mt-4 inline-flex items-center text-sm font-medium link-underline"
+          className="mt-4 inline-flex items-center text-sm font-medium link-underline text-primary"
         >
-          Learn more
+          Découvrir nos services
           <ArrowRight className="ml-1 h-4 w-4" />
         </Link>
       </div>

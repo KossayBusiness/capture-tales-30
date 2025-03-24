@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import Logo from '@/components/layout/Logo';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,10 +11,10 @@ const Navbar = () => {
   const location = useLocation();
 
   const navLinks = [
-    { text: 'Home', href: '/' },
-    { text: 'Wedding', href: '/wedding' },
-    { text: 'Product', href: '/product' },
-    { text: 'Media', href: '/media' },
+    { text: 'Accueil', href: '/' },
+    { text: 'Mariages', href: '/wedding' },
+    { text: 'Événements Familiaux', href: '/product' },
+    { text: 'Portraits', href: '/media' },
     { text: 'Contact', href: '/#contact' },
   ];
 
@@ -38,13 +39,7 @@ const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link 
-          to="/" 
-          className="font-serif text-2xl font-medium transition-all duration-300"
-          aria-label="Home"
-        >
-          Capture Tales
-        </Link>
+        <Logo />
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
