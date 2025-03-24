@@ -4,51 +4,52 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import PricingTable from '@/components/ui/PricingTable';
 import Contact from '@/components/home/Contact';
+import { Button } from '@/components/ui/button';
 
 const Product = () => {
-  const productPackages = [
+  const eventsPackages = [
     {
-      id: 'basic-product',
-      title: 'Basic Product Package',
-      price: '$699',
-      description: 'Essential coverage for small product catalogs.',
+      id: 'basic-event',
+      title: 'Forfait Événement Essentiel',
+      price: '799€',
+      description: 'Idéal pour les petits événements familiaux.',
       features: [
-        '4 hours of studio time',
-        '100-200 edited product photos',
-        'Short product showcase video (1-2 minutes)',
-        'Basic retouching included',
-        'Digital delivery'
+        '4 heures de couverture',
+        '100-200 photos retouchées',
+        'Vidéo résumé de l\'événement (1-2 min)',
+        'Galerie en ligne sécurisée',
+        'Livraison numérique'
       ]
     },
     {
-      id: 'standard-product',
-      title: 'Standard Product Package',
-      price: '$1,299',
-      description: 'Comprehensive coverage for your product line.',
+      id: 'standard-event',
+      title: 'Forfait Événement Classique',
+      price: '1 499€',
+      description: 'Parfait pour les célébrations importantes.',
       features: [
-        '6 hours of studio time',
-        '150-300 edited product photos',
-        'Product showcase video (2-3 minutes)',
-        'Lifestyle shots (products in use)',
-        'Advanced retouching included',
-        'Digital delivery with commercial usage rights'
+        '6 heures de couverture',
+        '150-300 photos retouchées',
+        'Vidéo documentaire de l\'événement (3-5 min)',
+        'Photos des moments clés et des groupes',
+        'Galerie en ligne avec options de partage',
+        'Livraison numérique'
       ],
       isPopular: true
     },
     {
-      id: 'premium-product',
-      title: 'Premium Product Package',
-      price: '$1,999',
-      description: 'Premium coverage for complete product catalogs.',
+      id: 'premium-event',
+      title: 'Forfait Événement Premium',
+      price: '2 299€',
+      description: 'Une couverture complète pour vos occasions spéciales.',
       features: [
-        '6 hours of studio time',
-        '150-300 edited product photos',
-        'High-quality product video (3-5 minutes)',
-        'Lifestyle shots (products in use)',
-        'Behind-the-scenes footage',
-        'Social media teaser (30-60 seconds)',
-        'Premium retouching included',
-        'Digital delivery with full commercial usage rights'
+        '8 heures de couverture',
+        '300-500 photos retouchées',
+        'Vidéo documentaire de l\'événement (5-8 min)',
+        'Photos des moments clés et des groupes',
+        'Teaser pour les réseaux sociaux',
+        'Album photo imprimé (25 pages)',
+        'Galerie en ligne avec options de partage',
+        'Livraison numérique premium'
       ]
     }
   ];
@@ -56,26 +57,31 @@ const Product = () => {
   return (
     <>
       <Helmet>
-        <title>Product Coverage | Capture Tales</title>
-        <meta name="description" content="Professional product photography and videography services for brands and businesses." />
+        <title>Événements Familiaux | Capture Tales</title>
+        <meta name="description" content="Services professionnels de photographie et vidéographie pour vos événements familiaux importants." />
       </Helmet>
       
       <Navbar />
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center brightness-[0.3] -z-10" />
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center brightness-[0.3] -z-10" />
         <div className="container mx-auto px-6 relative z-10 text-white">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 animate-in">
-              Product Coverage
+              Événements Familiaux
             </h1>
             <p className="text-xl md:text-2xl mb-8 animate-in delay-100">
-              Showcase your products in the best light
+              Immortalisez vos moments de bonheur en famille
             </p>
             <p className="text-lg opacity-80 animate-in delay-200">
-              Professional photography and videography for brands and businesses to make your products stand out from the competition.
+              Anniversaires, baptêmes, réunions de famille ou autres célébrations. Nous immortalisons ces moments précieux pour que vous puissiez les chérir pour toujours.
             </p>
+            <div className="mt-8">
+              <Button size="lg" asChild>
+                <a href="#contact">Demander un devis</a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -84,37 +90,183 @@ const Product = () => {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 grid grid-cols-2 gap-4">
-              <div className="rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" 
-                  alt="Product photography" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80" 
-                  alt="Product photography" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="rounded-lg overflow-hidden col-span-2">
-                <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&q=80" 
-                  alt="Product photography" 
-                  className="w-full h-60 object-cover"
-                />
+            <div className="order-2 md:order-1">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?auto=format&fit=crop&w=600&q=80" 
+                    alt="Fête d'anniversaire" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1472653431158-6364773b2a56?auto=format&fit=crop&w=600&q=80" 
+                    alt="Baptême" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=600&q=80" 
+                    alt="Réunion de famille" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=600&q=80" 
+                    alt="Célébration familiale" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <h2 className="text-3xl md:text-4xl font-medium mb-6">Elevate Your Brand</h2>
+              <h2 className="text-3xl md:text-4xl font-medium mb-6">Des souvenirs précieux pour toute la famille</h2>
               <p className="text-muted-foreground mb-4">
-                In today's competitive market, high-quality visual content isn't just nice to have—it's essential. Our product photography and videography services help your products stand out and make a lasting impression.
+                Les moments passés en famille sont parmi les plus précieux de la vie. Qu'il s'agisse d'un baptême, d'un anniversaire, d'une réunion de famille ou d'une autre célébration importante, notre équipe est là pour capturer l'essence de ces événements.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Nous savons à quel point il est important de pouvoir revivre ces instants de joie et d'émotion. C'est pourquoi nous nous efforçons de capturer non seulement l'événement lui-même, mais aussi les petits moments qui font la richesse de ces rassemblements : les rires, les larmes de joie, les étreintes chaleureuses.
               </p>
               <p className="text-muted-foreground">
-                Whether you're launching a new product, updating your website, or creating content for social media, our team delivers stunning visuals that showcase your products in their best light. From e-commerce photography to lifestyle shots and promotional videos, we create content that drives engagement and sales.
+                Notre approche discrète et professionnelle permet de documenter ces moments sans perturber le déroulement naturel de votre événement, vous permettant ainsi de profiter pleinement de ces instants précieux avec vos proches.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Services Overview */}
+      <section className="py-16 md:py-24 bg-secondary/50">
+        <div className="container mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-medium">Nos Services pour Événements Familiaux</h2>
+            <p className="mt-4 text-muted-foreground">
+              Des solutions complètes pour tous types de célébrations familiales
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="glass rounded-lg overflow-hidden shadow-lg">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1515168833906-d2a3b82b302a?auto=format&fit=crop&w=600&q=80" 
+                  alt="Anniversaires" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-medium mb-3">Anniversaires</h3>
+                <p className="text-muted-foreground">
+                  Des photos et vidéos mémorables pour immortaliser ces jalons importants de la vie, qu'il s'agisse du premier anniversaire d'un enfant ou d'une célébration d'un événement marquant.
+                </p>
+              </div>
+            </div>
+            
+            <div className="glass rounded-lg overflow-hidden shadow-lg">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1595118828223-e2683f73a470?auto=format&fit=crop&w=600&q=80" 
+                  alt="Baptêmes" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-medium mb-3">Baptêmes et Cérémonies</h3>
+                <p className="text-muted-foreground">
+                  Une couverture respectueuse et élégante des moments spirituels et émouvants de ces célébrations importantes pour vous et votre famille.
+                </p>
+              </div>
+            </div>
+            
+            <div className="glass rounded-lg overflow-hidden shadow-lg">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1529634597503-139d3726fed5?auto=format&fit=crop&w=600&q=80" 
+                  alt="Réunions de famille" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-medium mb-3">Réunions de Famille</h3>
+                <p className="text-muted-foreground">
+                  Des souvenirs précieux de ces moments où plusieurs générations se rassemblent, avec une attention particulière aux interactions et aux moments de complicité.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Why Choose Us */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-medium mb-6">Pourquoi Nous Choisir</h2>
+              <p className="text-muted-foreground mb-6">
+                Nous comprenons l'importance de ces moments familiaux et mettons tout notre savoir-faire à votre service pour les immortaliser avec authenticité et émotion.
+              </p>
+              
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-medium mb-1">Expérience avec les Enfants</h3>
+                    <p className="text-muted-foreground">Nous savons comment mettre à l'aise les plus jeunes et capturer leur spontanéité.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-medium mb-1">Discrétion Professionnelle</h3>
+                    <p className="text-muted-foreground">Nous nous intégrons naturellement à votre événement sans perturber les moments importants.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-medium mb-1">Équipement Adapté</h3>
+                    <p className="text-muted-foreground">Notre matériel professionnel nous permet de nous adapter à tous types d'environnements et de conditions d'éclairage.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-medium mb-1">Souvenirs Durables</h3>
+                    <p className="text-muted-foreground">Nous créons des souvenirs qui traverseront les générations et renforceront les liens familiaux.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <img 
+                src="https://images.unsplash.com/photo-1564889996025-b8239c248a3c?auto=format&fit=crop&w=800&q=80" 
+                alt="Famille heureuse" 
+                className="rounded-lg shadow-xl"
+              />
             </div>
           </div>
         </div>
@@ -122,57 +274,37 @@ const Product = () => {
       
       {/* Pricing Table */}
       <PricingTable 
-        title="Product Coverage Packages" 
-        subtitle="Choose the perfect package for your product line" 
-        packages={productPackages} 
+        title="Nos Forfaits Événements" 
+        subtitle="Choisissez le forfait idéal pour immortaliser vos moments en famille" 
+        packages={eventsPackages} 
       />
       
-      {/* Benefits Section */}
+      {/* FAQ Section */}
       <section className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-medium">Why Choose Our Product Coverage</h2>
+            <h2 className="text-3xl md:text-4xl font-medium">Questions Fréquentes</h2>
             <p className="mt-4 text-muted-foreground">
-              Discover the benefits of professional product photography and videography
+              Trouvez des réponses aux questions courantes sur nos services d'événements familiaux
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="glass rounded-lg p-6 animate-in">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-medium mb-2">Increased Conversion Rates</h3>
-              <p className="text-muted-foreground">
-                High-quality product images can increase conversion rates by up to 40%. Professional photography helps customers visualize your products better.
-              </p>
+          <div className="max-w-3xl mx-auto glass rounded-lg divide-y divide-border">
+            <div className="p-6">
+              <h3 className="text-xl font-medium">Combien de temps à l'avance devons-nous réserver ?</h3>
+              <p className="mt-2 text-muted-foreground">Nous recommandons de réserver au moins 1 à 3 mois à l'avance pour garantir notre disponibilité. Pour les événements pendant les périodes de fêtes, une réservation plus anticipée est conseillée.</p>
             </div>
-            
-            <div className="glass rounded-lg p-6 animate-in delay-100">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 11l5-5m0 0l5 5m-5-5v12" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-medium mb-2">Enhanced Brand Perception</h3>
-              <p className="text-muted-foreground">
-                Professional visuals elevate your brand image and build trust with customers. Quality imagery reflects the quality of your products.
-              </p>
+            <div className="p-6">
+              <h3 className="text-xl font-medium">Comment se déroule la séance le jour de l'événement ?</h3>
+              <p className="mt-2 text-muted-foreground">Notre équipe arrive généralement une heure avant le début officiel pour s'installer et capturer les préparatifs. Nous travaillons ensuite discrètement tout au long de l'événement, en suivant un plan établi avec vous au préalable.</p>
             </div>
-            
-            <div className="glass rounded-lg p-6 animate-in delay-200">
-              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-medium mb-2">Versatile Content</h3>
-              <p className="text-muted-foreground">
-                Our product photography can be used across all marketing channels, from your website and social media to print materials and advertising.
-              </p>
+            <div className="p-6">
+              <h3 className="text-xl font-medium">Peut-on demander des photos de groupe spécifiques ?</h3>
+              <p className="mt-2 text-muted-foreground">Absolument ! Nous vous encourageons à nous fournir une liste des groupes familiaux que vous souhaitez photographier. Cela nous aide à nous assurer que tous les moments importants sont capturés.</p>
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-medium">Comment recevons-nous nos photos et vidéos ?</h3>
+              <p className="mt-2 text-muted-foreground">Toutes les photos et vidéos sont livrées via une galerie en ligne privée que vous pouvez partager avec votre famille. Les forfaits incluant des albums physiques seront livrés à votre domicile.</p>
             </div>
           </div>
         </div>
