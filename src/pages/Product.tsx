@@ -101,7 +101,7 @@ const Product = () => {
                 </div>
                 <div className="rounded-lg overflow-hidden shadow-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1472653431158-6364773b2a56?auto=format&fit=crop&w=600&q=80" 
+                    src="https://images.unsplash.com/photo-1482275548304-a58859dc31b7?auto=format&fit=crop&w=600&q=80" 
                     alt="Baptême" 
                     className="w-full h-full object-cover"
                   />
@@ -168,7 +168,7 @@ const Product = () => {
             <div className="glass rounded-lg overflow-hidden shadow-lg">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1533071581733-072d6a282d86?auto=format&fit=crop&w=600&q=80" 
+                  src="https://images.unsplash.com/photo-1594823274242-19036bf455e9?auto=format&fit=crop&w=600&q=80" 
                   alt="Baptêmes" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
@@ -263,7 +263,7 @@ const Product = () => {
             
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" 
+                src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=800&q=80" 
                 alt="Équipe de photographes professionnels" 
                 className="rounded-lg shadow-xl"
               />

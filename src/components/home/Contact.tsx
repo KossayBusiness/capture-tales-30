@@ -27,7 +27,7 @@ const Contact = () => {
     setTimeout(() => {
       console.log('Form submitted:', formData);
       setIsSubmitting(false);
-      toast.success('Thank you! Your message has been sent.');
+      toast.success('Merci ! Votre message a été envoyé.');
       setFormData({
         name: '',
         email: '',
@@ -43,9 +43,9 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-3xl md:text-4xl font-medium">Get in Touch</h2>
+            <h2 className="text-3xl md:text-4xl font-medium">Contactez-nous</h2>
             <p className="mt-4 text-muted-foreground">
-              Ready to capture your special moments? Contact us today for more information or to book our services.
+              Prêt à immortaliser vos moments spéciaux ? Contactez-nous dès aujourd'hui pour plus d'informations ou pour réserver nos services.
             </p>
             
             <div className="mt-8 space-y-4">
@@ -56,8 +56,8 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-medium">Phone</h3>
-                  <p className="mt-1 text-muted-foreground">+1 (234) 567-890</p>
+                  <h3 className="text-lg font-medium">Téléphone</h3>
+                  <p className="mt-1 text-muted-foreground">+33 (1) 23 45 67 89</p>
                 </div>
               </div>
               
@@ -69,7 +69,7 @@ const Contact = () => {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-medium">Email</h3>
-                  <p className="mt-1 text-muted-foreground">contact@capturetales.com</p>
+                  <p className="mt-1 text-muted-foreground">contact@capturetales.fr</p>
                 </div>
               </div>
               
@@ -81,20 +81,20 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-medium">Address</h3>
-                  <p className="mt-1 text-muted-foreground">123 Photographer Street, New York, NY 10001</p>
+                  <h3 className="text-lg font-medium">Adresse</h3>
+                  <p className="mt-1 text-muted-foreground">15 Rue des Photographes, 75008 Paris, France</p>
                 </div>
               </div>
             </div>
           </div>
           
           <div className="glass rounded-lg p-6 md:p-8">
-            <h3 className="text-2xl font-medium mb-6">Send us a Message</h3>
+            <h3 className="text-2xl font-medium mb-6">Envoyez-nous un message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-muted-foreground mb-1">
-                    Name
+                    Nom
                   </label>
                   <input
                     id="name"
@@ -125,7 +125,7 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-muted-foreground mb-1">
-                    Phone
+                    Téléphone
                   </label>
                   <input
                     id="phone"
@@ -147,11 +147,11 @@ const Contact = () => {
                     onChange={handleChange}
                     className="w-full px-4 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                   >
-                    <option value="">Select a service</option>
-                    <option value="wedding">Wedding Production</option>
-                    <option value="product">Product Coverage</option>
-                    <option value="media">Media Coverage</option>
-                    <option value="other">Other</option>
+                    <option value="">Sélectionnez un service</option>
+                    <option value="wedding">Photographie de Mariage</option>
+                    <option value="product">Événements Familiaux</option>
+                    <option value="media">Séances Portraits</option>
+                    <option value="other">Autre</option>
                   </select>
                 </div>
               </div>
@@ -178,7 +178,7 @@ const Contact = () => {
                   disabled={isSubmitting}
                   className="w-full md:w-auto"
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
                 </Button>
               </div>
             </form>

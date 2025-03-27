@@ -15,14 +15,14 @@ const Services = () => {
     {
       title: 'Événements Familiaux',
       description: 'Anniversaires, baptêmes, réunions de famille ou autres célébrations. Nous immortalisons ces moments précieux pour que vous puissiez les chérir pour toujours.',
-      imageSrc: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=600&q=80',
+      imageSrc: 'https://images.unsplash.com/photo-1544365558-35aa4afcf11f?auto=format&fit=crop&w=600&q=80',
       altText: 'Famille heureuse se réunissant pour une fête',
       linkTo: '/product'
     },
     {
       title: 'Séances Portraits',
       description: 'Des portraits professionnels qui capturent votre personnalité. Idéal pour les familles, couples, enfants ou portraits individuels.',
-      imageSrc: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80',
+      imageSrc: 'https://images.unsplash.com/photo-1606902965551-dce093cda6e7?auto=format&fit=crop&w=600&q=80',
       altText: 'Portrait familial professionnel',
       linkTo: '/media'
     }

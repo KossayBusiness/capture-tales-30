@@ -65,7 +65,7 @@ const Media = () => {
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center brightness-[0.3] -z-10" />
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1606902965551-dce093cda6e7?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center brightness-[0.3] -z-10" />
         <div className="container mx-auto px-6 relative z-10 text-white">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 animate-in">
@@ -112,21 +112,21 @@ const Media = () => {
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" 
+                  src="https://images.unsplash.com/photo-1606902965551-dce093cda6e7?auto=format&fit=crop&w=600&q=80" 
                   alt="Portrait de famille" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1511895571950-8b475cf2ed35?auto=format&fit=crop&w=600&q=80" 
+                  src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80" 
                   alt="Portrait de couple" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1485893086445-ed75865251e0?auto=format&fit=crop&w=600&q=80" 
+                  src="https://images.unsplash.com/photo-1516914589923-f105f1975b58?auto=format&fit=crop&w=600&q=80" 
                   alt="Portrait professionnel" 
                   className="w-full h-full object-cover"
                 />
@@ -166,7 +166,7 @@ const Media = () => {
             <div className="glass rounded-lg overflow-hidden shadow-lg">
               <div className="h-56 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1519417688547-8471366ea2e5?auto=format&fit=crop&w=600&q=80" 
+                  src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80" 
                   alt="Portraits de Couple" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
@@ -182,7 +182,7 @@ const Media = () => {
             <div className="glass rounded-lg overflow-hidden shadow-lg">
               <div className="h-56 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" 
+                  src="https://images.unsplash.com/photo-1607203694607-2faa1811495c?auto=format&fit=crop&w=600&q=80" 
                   alt="Portraits de Famille" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
@@ -318,14 +318,14 @@ const Media = () => {
             </div>
             <div className="overflow-hidden rounded-lg shadow-lg aspect-square">
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80" 
+                src="https://images.unsplash.com/photo-1606902965551-dce093cda6e7?auto=format&fit=crop&w=500&q=80" 
                 alt="Portrait famille" 
                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
               />
             </div>
             <div className="overflow-hidden rounded-lg shadow-lg aspect-square">
               <img 
-                src="https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?auto=format&fit=crop&w=500&q=80" 
+                src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=500&q=80" 
                 alt="Portrait couple" 
                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
               />
