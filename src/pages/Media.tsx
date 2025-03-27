@@ -65,7 +65,7 @@ const Media = () => {
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1623103493111-27a1bf9e2329?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center brightness-[0.3] -z-10" />
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center brightness-[0.3] -z-10" />
         <div className="container mx-auto px-6 relative z-10 text-white">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-6 animate-in">
@@ -112,7 +112,7 @@ const Media = () => {
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=600&q=80" 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" 
                   alt="Portrait de famille" 
                   className="w-full h-full object-cover"
                 />
@@ -182,7 +182,7 @@ const Media = () => {
             <div className="glass rounded-lg overflow-hidden shadow-lg">
               <div className="h-56 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1457356567977-21b968a15a50?auto=format&fit=crop&w=600&q=80" 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" 
                   alt="Portraits de Famille" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
@@ -318,7 +318,7 @@ const Media = () => {
             </div>
             <div className="overflow-hidden rounded-lg shadow-lg aspect-square">
               <img 
-                src="https://images.unsplash.com/photo-1437189651695-25f48e386c1a?auto=format&fit=crop&w=500&q=80" 
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80" 
                 alt="Portrait famille" 
                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
               />

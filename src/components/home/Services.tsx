@@ -8,21 +8,21 @@ const Services = () => {
     {
       title: 'Photographie de Mariage',
       description: 'Des cérémonies intimes aux grandes célébrations, nous capturons les émotions, les détails et les moments inoubliables de votre journée spéciale.',
-      imageSrc: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=600&q=80',
-      altText: 'Couple de mariés s\'embrassant au coucher du soleil',
+      imageSrc: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80',
+      altText: 'Couple de mariés s\'embrassant dans un cadre naturel',
       linkTo: '/wedding'
     },
     {
       title: 'Événements Familiaux',
       description: 'Anniversaires, baptêmes, réunions de famille ou autres célébrations. Nous immortalisons ces moments précieux pour que vous puissiez les chérir pour toujours.',
-      imageSrc: 'https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?auto=format&fit=crop&w=600&q=80',
+      imageSrc: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=600&q=80',
       altText: 'Famille heureuse se réunissant pour une fête',
       linkTo: '/product'
     },
     {
       title: 'Séances Portraits',
       description: 'Des portraits professionnels qui capturent votre personnalité. Idéal pour les familles, couples, enfants ou portraits individuels.',
-      imageSrc: 'https://images.unsplash.com/photo-1623103493111-27a1bf9e2329?auto=format&fit=crop&w=600&q=80',
+      imageSrc: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80',
       altText: 'Portrait familial professionnel',
       linkTo: '/media'
     }

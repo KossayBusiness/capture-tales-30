@@ -168,7 +168,7 @@ const Product = () => {
             <div className="glass rounded-lg overflow-hidden shadow-lg">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1595118828223-e2683f73a470?auto=format&fit=crop&w=600&q=80" 
+                  src="https://images.unsplash.com/photo-1533071581733-072d6a282d86?auto=format&fit=crop&w=600&q=80" 
                   alt="Baptêmes" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
@@ -263,8 +263,8 @@ const Product = () => {
             
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1564889996025-b8239c248a3c?auto=format&fit=crop&w=800&q=80" 
-                alt="Famille heureuse" 
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" 
+                alt="Équipe de photographes professionnels" 
                 className="rounded-lg shadow-xl"
               />
             </div>

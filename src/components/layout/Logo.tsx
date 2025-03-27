@@ -1,5 +1,5 @@
 
-import { Camera, Film } from 'lucide-react';
+import { Camera, Film, Video } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
@@ -15,7 +15,10 @@ const Logo = ({ className, iconOnly = false }: LogoProps) => {
         <div className="absolute inset-0 flex items-center justify-center">
           <Camera className="h-6 w-6" />
         </div>
-        <div className="absolute inset-0 flex items-center justify-center opacity-40">
+        <div className="absolute inset-0 flex items-center justify-center rotate-45 opacity-40">
+          <Video className="h-6 w-6" />
+        </div>
+        <div className="absolute inset-0 flex items-center justify-center -rotate-45 opacity-30">
           <Film className="h-7 w-7" />
         </div>
         <div className="absolute -right-1 -top-1 h-3 w-3 rounded-full bg-red-500 animate-pulse" />
