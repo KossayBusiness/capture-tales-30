@@ -1,3 +1,4 @@
+
 import { Helmet } from 'react-helmet';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -167,7 +168,7 @@ const Product = () => {
             <div className="glass rounded-lg overflow-hidden shadow-lg">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1515443961218-a51367888e4b?auto=format&fit=crop&w=600&q=80" 
+                  src="https://images.unsplash.com/photo-1594823274242-19036bf455e9?auto=format&fit=crop&w=600&q=80" 
                   alt="Baptêmes" 
                   className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
@@ -262,7 +263,7 @@ const Product = () => {
             
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1556103255-4443dbae8e5a?auto=format&fit=crop&w=800&q=80" 
+                src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=800&q=80" 
                 alt="Équipe de photographes professionnels" 
                 className="rounded-lg shadow-xl"
               />
